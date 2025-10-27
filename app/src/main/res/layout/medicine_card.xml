@@ -1,0 +1,75 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:radius="14dp"
+    android:elevation="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/intro"
+        android:padding="18dp">
+
+        <EditText
+            android:id="@+id/etMedicineName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Medicine Name"
+            android:textColor="@color/white"
+            android:paddingLeft="12dp"/>
+
+        <EditText
+            android:id="@+id/etDoseCount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_bg"
+            android:inputType="number"
+            android:hint="Doses Per Day"
+            android:textColor="@color/white"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etTotalDays"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_bg"
+            android:inputType="number"
+            android:hint="Total Days"
+            android:textColor="@color/white"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/doseTimesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnSetReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Reminder"
+            android:backgroundTint="@color/primary"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"/>
+
+        <Button
+            android:id="@+id/btnStopReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Reminder"
+            android:backgroundTint="@color/errorColor"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
